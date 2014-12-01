@@ -32,6 +32,7 @@ function clearNotification() {
 // Run when user successfully submits form
 function clearForm() {
 	// Clear our text boxes' content so the user doesn't submit twice
+	document.getElementById('time-input').value = '';
 	document.getElementById('prompt').value = '';
 	document.getElementById('paragraph').value = '';
 }
