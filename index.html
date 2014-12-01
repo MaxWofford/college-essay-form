@@ -2,20 +2,39 @@
 <html>
 <head>
 	<title></title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script src="https://cdn.firebase.com/js/client/2.0.5/firebase.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="http://cdn.firebase.com/js/client/2.0.5/firebase.js"></script>
 	<script src="js/script.js"></script>
+	<style type="text/css">
+		textarea{
+			width: 100%;
+			max-width: 100%;
+		}
+		#paragraph{
+			height: 50vh;
+		}
+	</style>
 </head>
 <body>
-<div id="notify" onclick="clearNotification();"></div>
-<fieldset>
-	<legend>Your college essay</legend>
-	<textarea id="prompt" placeholder="Prompt"></textarea>
-	<br>
-	<textarea id="paragraph" placeholder="Essay"></textarea>
-	<input type="submit" onclick="submit();" value="Submit">
-</fieldset>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h1>College essays</h1>
+			<div id="notify" onclick="clearNotification();"></div>
+			<fieldset>
+				<legend>Your essay prompt</legend>
+				<textarea id="prompt" placeholder="Prompt"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Your college essay</legend>
+				<textarea id="paragraph" placeholder="Essay"></textarea>
+				<br>
+			</fieldset>
+			<input type="submit" onclick="submit();" value="Submit">
+		</div>
+	</div>
+</div>
 </body>
 </html>
