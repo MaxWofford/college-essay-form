@@ -3,12 +3,19 @@
 <head>
 	<title></title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script src="https://cdn.firebase.com/js/client/2.0.5/firebase.js"></script>
-	<script src="js/firebase.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
-<textarea id="prompt"></textarea>
-<textarea id="paragraph"></textarea>
+<div id="notify" onclick="clearNotification();"></div>
+<fieldset>
+	<legend>Your college essay</legend>
+	<textarea id="prompt" placeholder="Prompt"></textarea>
+	<br>
+	<textarea id="paragraph" placeholder="Essay"></textarea>
+	<input type="submit" onclick="submit();" value="Submit">
+</fieldset>
 </body>
 </html>
